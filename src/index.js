@@ -1,5 +1,6 @@
-import React, { Component, PropTypes } from "react"
-import { BackAndroid, Platform } from "react-native"
+import React, { Component } from "react"
+import PropTypes from 'prop-types'
+import { BackHandler, Platform } from "react-native"
 import withSideEffect from "react-side-effect"
 
 let listener = null
