@@ -10,7 +10,7 @@ class AndroidBackButton extends Component {
 
   componentDidMount() {
     if (Platform.OS === "android" && listener === null) {
-      listener = BackAndroid.addEventListener("hardwareBackPress", () => {
+      listener = BackHandler.addEventListener("hardwareBackPress", () => {
         return backButtonPressFunction()
       })
     }
